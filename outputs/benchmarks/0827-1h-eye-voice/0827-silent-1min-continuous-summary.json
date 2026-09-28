@@ -1,0 +1,149 @@
+{
+  "run_id": "0827-silent-1min",
+  "samples": 59,
+  "raw_csv": "outputs/benchmarks/0827-1h-eye-voice/0827-silent-1min-continuous.csv",
+  "metrics": {
+    "cpu_percent": {
+      "p50": 109.954,
+      "p95": 116.985,
+      "average": 109.432,
+      "peak": 123.113
+    },
+    "rss_mib": {
+      "p50": 125.652,
+      "p95": 126.027,
+      "average": 124.242,
+      "peak": 128.863
+    },
+    "swap_mib": {
+      "p50": 12.523,
+      "p95": 17.172,
+      "average": 14.276,
+      "peak": 17.191
+    },
+    "capture_fps": {
+      "p50": 15.0,
+      "p95": 15.0,
+      "average": 15.0,
+      "peak": 15.0
+    },
+    "tracker_effective_fps": {
+      "p50": 2.023,
+      "p95": 2.115,
+      "average": 2.039,
+      "peak": 2.195
+    },
+    "capture_to_snapshot_p50_ms": {
+      "p50": 115.696,
+      "p95": 125.786,
+      "average": 117.488,
+      "peak": 127.641
+    },
+    "capture_to_snapshot_p95_ms": {
+      "p50": 147.117,
+      "p95": 148.386,
+      "average": 175.742,
+      "peak": 1844.671
+    },
+    "snapshot_age_ms": {
+      "p50": 237.893,
+      "p95": 455.533,
+      "average": 241.148,
+      "peak": 508.516
+    },
+    "snapshot_age_p95_ms": {
+      "p50": 472.336,
+      "p95": 476.338,
+      "average": 472.359,
+      "peak": 476.338
+    },
+    "snapshot_to_policy_commit_p50_ms": {
+      "p50": 46.715,
+      "p95": 49.476,
+      "average": 47.093,
+      "peak": 53.707
+    },
+    "snapshot_to_policy_commit_p95_ms": {
+      "p50": 77.024,
+      "p95": 79.682,
+      "average": 75.567,
+      "peak": 79.682
+    },
+    "policy_commit_to_first_eye_frame_p50_ms": {
+      "p50": 79.238,
+      "p95": 79.464,
+      "average": 78.84,
+      "peak": 85.85
+    },
+    "policy_commit_to_first_eye_frame_p95_ms": {
+      "p50": 101.761,
+      "p95": 102.235,
+      "average": 101.525,
+      "peak": 126.389
+    },
+    "face_to_eye_first_frame_p50_ms": {
+      "p50": 145.73,
+      "p95": 145.73,
+      "average": 145.73,
+      "peak": 145.73
+    },
+    "face_to_eye_first_frame_p95_ms": {
+      "p50": 145.73,
+      "p95": 146.182,
+      "average": 145.914,
+      "peak": 146.182
+    },
+    "eye_effective_fps": {
+      "p50": 11.945,
+      "p95": 12.417,
+      "average": 11.996,
+      "peak": 12.462
+    },
+    "eye_frame_p95_ms": {
+      "p50": 106.562,
+      "p95": 109.365,
+      "average": 105.268,
+      "peak": 112.064
+    },
+    "vad_to_listening_cue_p50_ms": {
+      "p50": null,
+      "p95": null,
+      "average": null,
+      "peak": null
+    },
+    "vad_to_listening_cue_p95_ms": {
+      "p50": null,
+      "p95": null,
+      "average": null,
+      "peak": null
+    },
+    "speech_end_to_silence_confirmed_p50_ms": {
+      "p50": null,
+      "p95": null,
+      "average": null,
+      "peak": null
+    },
+    "speech_end_to_silence_confirmed_p95_ms": {
+      "p50": null,
+      "p95": null,
+      "average": null,
+      "peak": null
+    },
+    "silence_confirmed_to_first_audio_sample_p50_ms": {
+      "p50": null,
+      "p95": null,
+      "average": null,
+      "peak": null
+    },
+    "silence_confirmed_to_first_audio_sample_p95_ms": {
+      "p50": null,
+      "p95": null,
+      "average": null,
+      "peak": null
+    }
+  },
+  "throttled_values": [
+    "throttled=0x0"
+  ],
+  "errors": []
+}

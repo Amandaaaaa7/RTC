@@ -1,0 +1,149 @@
+{
+  "run_id": "2026-08-21-idle-autoplay",
+  "samples": 59,
+  "raw_csv": "outputs/benchmarks/2026-08-21-audio-parallel/2026-08-21-idle-autoplay-continuous.csv",
+  "metrics": {
+    "cpu_percent": {
+      "p50": null,
+      "p95": null,
+      "average": null,
+      "peak": null
+    },
+    "rss_mib": {
+      "p50": null,
+      "p95": null,
+      "average": null,
+      "peak": null
+    },
+    "swap_mib": {
+      "p50": null,
+      "p95": null,
+      "average": null,
+      "peak": null
+    },
+    "capture_fps": {
+      "p50": 15.0,
+      "p95": 15.0,
+      "average": 15.0,
+      "peak": 15.0
+    },
+    "tracker_effective_fps": {
+      "p50": 2.022,
+      "p95": 2.099,
+      "average": 2.035,
+      "peak": 2.158
+    },
+    "capture_to_snapshot_p50_ms": {
+      "p50": 122.407,
+      "p95": 145.249,
+      "average": 125.144,
+      "peak": 151.366
+    },
+    "capture_to_snapshot_p95_ms": {
+      "p50": 159.968,
+      "p95": 201.821,
+      "average": 164.83,
+      "peak": 201.821
+    },
+    "snapshot_age_ms": {
+      "p50": 227.738,
+      "p95": 494.538,
+      "average": 246.808,
+      "peak": 499.891
+    },
+    "snapshot_age_p95_ms": {
+      "p50": 471.549,
+      "p95": 483.392,
+      "average": 470.007,
+      "peak": 485.8
+    },
+    "snapshot_to_policy_commit_p50_ms": {
+      "p50": 41.961,
+      "p95": 44.896,
+      "average": 41.257,
+      "peak": 45.796
+    },
+    "snapshot_to_policy_commit_p95_ms": {
+      "p50": 91.651,
+      "p95": 92.919,
+      "average": 89.334,
+      "peak": 92.919
+    },
+    "policy_commit_to_first_eye_frame_p50_ms": {
+      "p50": 87.764,
+      "p95": 95.123,
+      "average": 87.668,
+      "peak": 99.965
+    },
+    "policy_commit_to_first_eye_frame_p95_ms": {
+      "p50": 103.835,
+      "p95": 104.298,
+      "average": 103.361,
+      "peak": 106.474
+    },
+    "face_to_eye_first_frame_p50_ms": {
+      "p50": 123.165,
+      "p95": 123.165,
+      "average": 117.434,
+      "peak": 123.165
+    },
+    "face_to_eye_first_frame_p95_ms": {
+      "p50": 123.165,
+      "p95": 125.72,
+      "average": 123.425,
+      "peak": 125.72
+    },
+    "eye_effective_fps": {
+      "p50": 11.475,
+      "p95": 12.282,
+      "average": 11.6,
+      "peak": 12.482
+    },
+    "eye_frame_p95_ms": {
+      "p50": 116.432,
+      "p95": 119.319,
+      "average": 113.771,
+      "peak": 120.13
+    },
+    "vad_to_listening_cue_p50_ms": {
+      "p50": 40.041,
+      "p95": 40.041,
+      "average": 40.041,
+      "peak": 40.041
+    },
+    "vad_to_listening_cue_p95_ms": {
+      "p50": 56.009,
+      "p95": 56.009,
+      "average": 51.447,
+      "peak": 56.009
+    },
+    "speech_end_to_silence_confirmed_p50_ms": {
+      "p50": 671.775,
+      "p95": 726.415,
+      "average": 694.001,
+      "peak": 726.415
+    },
+    "speech_end_to_silence_confirmed_p95_ms": {
+      "p50": 726.415,
+      "p95": 730.432,
+      "average": 704.896,
+      "peak": 730.432
+    },
+    "silence_confirmed_to_first_audio_sample_p50_ms": {
+      "p50": 42.208,
+      "p95": 44.739,
+      "average": 38.727,
+      "peak": 44.739
+    },
+    "silence_confirmed_to_first_audio_sample_p95_ms": {
+      "p50": 44.739,
+      "p95": 44.739,
+      "average": 44.739,
+      "peak": 44.739
+    }
+  },
+  "throttled_values": [
+    "throttled=0x0"
+  ],
+  "errors": []
+}

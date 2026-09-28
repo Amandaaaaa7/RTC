@@ -1,0 +1,10 @@
+numpy
+pyalsaaudio
+Pillow
+picamera2
+dashscope
+speechrecognition
+pydub
+edge-tts
+requests>=2.28.0
+websockets>=12,<14

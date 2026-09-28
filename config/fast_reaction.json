@@ -1,0 +1,61 @@
+{
+  "reactions": [
+    {
+      "keywords": ["小小熊"],
+      "audio_path": "audio_assets/vo/en.mp3",
+      "eye_expression": "surprise1.0"
+    },
+    {
+      "keywords": ["再见", "拜拜"],
+      "audio_path": "audio_assets/vo/bye.mp3",
+      "eye_expression": "calmness1.0"
+    },
+    {
+      "keywords": ["你好", "哈喽"],
+      "audio_paths": [
+        "audio_assets/vo/hi.mp3",
+        "audio_assets/vo/ya.mp3"
+      ],
+      "eye_expression": "excitement0.6"
+    },
+    {
+      "keywords": ["真棒", "厉害", "聪明", "好棒"],
+      "audio_path": "audio_assets/vo/076_amusement_short.mp3",
+      "eye_expression": "amusement1.0"
+    },
+    {
+      "keywords": ["讨厌"],
+      "audio_path": "audio_assets/vo/004_sadness_short.mp3",
+      "eye_expression": "sadness1.0"
+    },
+    {
+      "keywords": ["你走开", "你好烦", "我生气了"],
+      "audio_path": "audio_assets/vo/004_sadness_short.mp3",
+      "eye_expression": "sadness1.0"
+    },
+    {
+      "keywords": ["唱歌", "想听歌"],
+      "audio_paths": [
+        "audio_assets/vo/song/mary_lamb.wav",
+        "audio_assets/vo/song/jingle_bells.wav",
+        "audio_assets/vo/song/jasmine_flower.wav",
+        "audio_assets/vo/song/04_twinkle_twinkle_doubao.wav",
+        "audio_assets/vo/song/01_daisy_bell_doubao_smooth.wav"
+      ],
+      "eye_expression": "interest1.0"
+    }
+  ],
+  "eye_expression_duration_s": 2.0,
+  "eye_state": "listening",
+  "detection_threshold": 0.5,
+  "cooldown_s": 2.0,
+  "backend": "sherpa-onnx",
+  "backend_config": {
+    "model_dir": "models/kws/sherpa-onnx/sherpa-onnx-kws-zipformer-wenetspeech-3.3M-2024-01-01",
+    "encoder_model": "encoder-epoch-12-avg-2-chunk-16-left-64.int8.onnx",
+    "decoder_model": "decoder-epoch-12-avg-2-chunk-16-left-64.onnx",
+    "joiner_model": "joiner-epoch-12-avg-2-chunk-16-left-64.int8.onnx",
+    "keywords_file": "config/my_keywords.txt",
+    "tokens_file": "tokens.txt"
+  }
+}

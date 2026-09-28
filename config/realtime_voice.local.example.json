@@ -1,0 +1,7 @@
+{
+  "volc_direct": {
+    "voice_api_key": "YOUR_VOLC_VOICE_API_KEY",
+    "ark_api_key": "YOUR_ARK_API_KEY",
+    "ark_model": "YOUR_ARK_MODEL_OR_ENDPOINT_ID"
+  }
+}

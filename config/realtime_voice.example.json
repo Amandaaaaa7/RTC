@@ -1,0 +1,24 @@
+{
+  "enabled": false,
+  "backend": "volc_direct",
+  "vad_threshold": 0.02,
+  "silence_duration_s": 0.8,
+  "welcome_message": "你好！我是圆宝，我来啦我来啦。",
+  "pause_callbacks_during_playback": true,
+  "local_memory": {
+    "enabled": true,
+    "max_context_turns": 10,
+    "store_path": "outputs/realtime_voice/memory.json",
+    "journal_dir": "outputs/realtime_voice/journal"
+  },
+  "volc_direct": {
+    "asr_resource_id": "volc.seedasr.sauc.duration",
+    "tts_resource_id": "seed-tts-2.0",
+    "tts_voice_type": "zh_female_vv_uranus_bigtts",
+    "tts_sample_rate": 24000,
+    "ark_model": "",
+    "ark_base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "ark_thinking": "disabled",
+    "system_prompt": "你是一个陪伴型玩偶机器人。回答简短、自然、诚实，不编造事实。"
+  }
+}
