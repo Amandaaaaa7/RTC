@@ -1,0 +1,2 @@
+websockets>=12,<14
+# PyAudio 需要系统先安装 PortAudio；Raspberry Pi OS 推荐 apt 安装 python3-pyaudio。

@@ -1,0 +1,19 @@
+{
+  "node_id": "yuanbao-pi",
+  "server_url": "ws://192.168.31.179:8765",
+  "token_env": "RTCVOICE_NODE_TOKEN",
+  "input_device": "default",
+  "output_device": "default",
+  "capture_sample_rate": 16000,
+  "playback_sample_rate": 24000,
+  "device_capture_sample_rate": 48000,
+  "device_playback_sample_rate": 48000,
+  "channels": 1,
+  "frame_ms": 40,
+  "echo_guard_ms": 220,
+  "reconnect_seconds": 3,
+  "tls": {
+    "ca_file": "",
+    "insecure_skip_verify": false
+  }
+}

@@ -1,0 +1,17 @@
+[Unit]
+Description=Yuanbao Raspberry Pi Audio Node
+After=network-online.target sound.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# 当前部署路径：/home/pi7/pi_affe_sys/RTC。
+User=pi7
+WorkingDirectory=/home/pi7/pi_affe_sys/RTC
+EnvironmentFile=/etc/rtcvoice-audio-node.env
+ExecStart=/home/pi7/pi_affe_sys/RTC/.venv/bin/python /home/pi7/pi_affe_sys/RTC/pi_audio_node.py --config /home/pi7/pi_affe_sys/RTC/config.json
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

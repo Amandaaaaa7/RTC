@@ -1,0 +1,113 @@
+{
+  "volcano": {
+    "access_key": "填写火山引擎 Access Key ID",
+    "secret_key": "填写火山引擎 Secret Access Key",
+    "app_id": "填写 RTC 应用 App ID",
+    "app_key": "填写 RTC 应用 App Key（仅用于服务端生成 Token）",
+    "region": "cn-north-1",
+    "service": "rtc"
+  },
+  "scene": {
+    "id": "Custom",
+    "welcome_message": "你好！我是圆宝，我来啦。"
+  },
+  "direct_voice": {
+    "api_key": "填写豆包语音 API Key（仅本机 Python 后端使用）",
+    "asr_resource_id": "volc.seedasr.sauc.duration",
+    "tts_resource_id": "seed-tts-2.0",
+    "tts_voice_type": "zh_female_vv_uranus_bigtts",
+    "tts_sample_rate": 24000
+  },
+  "ark": {
+    "api_key": "填写火山方舟 API Key（仅本机 Python 后端使用）",
+    "model": "填写已开通的方舟模型 ID",
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "thinking": "disabled",
+    "service_tier": ""
+  },
+  "local_memory": {
+    "enable": true,
+    "max_context_memories": 6,
+    "write_diary_on_stop": true
+  },
+  "audio_io": {
+    "mode": "local_browser",
+    "node_id": "yuanbao-pi",
+    "listen_host": "0.0.0.0",
+    "listen_port": 8765,
+    "shared_token": "填写一段仅电脑和树莓派知道的随机字符串",
+    "tls": {
+      "enabled": false,
+      "cert_file": "certs/server.crt",
+      "key_file": "certs/server.key"
+    },
+    "capture": {
+      "sample_rate": 16000,
+      "channels": 1,
+      "sample_width": 2,
+      "frame_ms": 40
+    },
+    "playback": {
+      "sample_rate": 24000,
+      "channels": 1,
+      "sample_width": 2
+    },
+    "pause_capture_during_playback": true
+  },
+  "rtc_agent": {
+    "user_id": "user_A",
+    "agent_id_prefix": "rtcvoice_agent",
+    "room_id_prefix": "rtcvoice_room",
+    "task_id_prefix": "rtcvoice_task",
+    "asr": {
+      "app_id": "填写豆包语音-流式语音识别的 App ID",
+      "access_token": "填写与 ASR App ID 配对的 Access Token",
+      "resource_id": "volc.seedasr.sauc.duration",
+      "stream_mode": 2,
+      "parameters": { "request": { "enable_nonstream": true } },
+      "silence_time": 600
+    },
+    "tts": {
+      "app_id": "填写豆包语音-语音合成大模型的 App ID",
+      "access_token": "填写与 TTS App ID 配对的 Access Token",
+      "resource_id": "seed-tts-1.0",
+      "voice_type": "zh_female_vv_uranus_bigtts",
+      "speech_rate": 0,
+      "loudness_rate": 0
+    },
+    "llm": {
+      "endpoint_id": "填写火山方舟已创建并开通的自定义推理接入点 ID（ep-...）",
+      "max_tokens": 1024,
+      "temperature": 0.1,
+      "top_p": 0.3,
+      "history_length": 10,
+      "thinking_type": "disabled"
+    },
+    "subtitle_mode": 1,
+    "idle_timeout": 30
+  },
+  "llm": {
+    "api_key": "可选：用于本地生成日记的 OpenAI 兼容接口 API Key",
+    "model": "qwen3.6-flash",
+    "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "max_tokens": 8000,
+    "temperature": 0.3,
+    "stream": false,
+    "messages": "以智能体第一人称写约 100 字日记，保持简洁、具体、克制。"
+  },
+  "memory": {
+    "api_key": "可选：VikingDB 记忆库 API Key",
+    "Enable": false,
+    "Provider": "volc",
+    "ProviderParams": {
+      "collection_name": "填写已授权的记忆库实例名称",
+      "limit": 8,
+      "filter": { "memory_type": ["event_v1"] }
+    },
+    "Score": 0.5
+  },
+  "agentconfig": {
+    "Burst": { "Enable": false, "BufferSize": 0, "Interval": 0 },
+    "VoicePrint": { "Mode": 0, "IdList": [], "Score": 50 }
+  }
+}

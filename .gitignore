@@ -1,0 +1,12 @@
+.claude/
+__pycache__/
+*.pyc
+nul
+rtcVoiceClient/__pycache__/
+rtcVoiceClient/conversation_summary.txt
+rtcVoiceClient/conversation_list.txt
+rtcVoiceClient/MEMORY.md
+rtcVoiceClient/*.pyproj
+rtcVoiceClient/*.pyproj.user
+rtcVoiceClient/.vs/
+rtcVoiceClient/config.json
